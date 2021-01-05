@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0408DF6125A4EFD4001DD0CB /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408DF6025A4EFD4001DD0CB /* EventListViewModel.swift */; };
+		044D363A25A4F7FB0094451D /* EventListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D363925A4F7FB0094451D /* EventListViewModelTests.swift */; };
 		04704B8925A48F02008A327D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04704B8825A48F02008A327D /* AppDelegate.swift */; };
 		04704B8B25A48F02008A327D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04704B8A25A48F02008A327D /* SceneDelegate.swift */; };
 		04704B8D25A48F02008A327D /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04704B8C25A48F02008A327D /* EventListViewController.swift */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		0408DF6025A4EFD4001DD0CB /* EventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModel.swift; sourceTree = "<group>"; };
+		044D363925A4F7FB0094451D /* EventListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModelTests.swift; sourceTree = "<group>"; };
 		04704B8525A48F02008A327D /* Mevents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mevents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04704B8825A48F02008A327D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04704B8A25A48F02008A327D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 		044CD28825A496C900A18181 /* EventList */ = {
 			isa = PBXGroup;
 			children = (
+				0408DF5E25A4EFAD001DD0CB /* ViewModel */,
 				044CD28A25A496DF00A18181 /* View */,
 			);
 			path = EventList;
@@ -156,7 +159,6 @@
 		044CD28A25A496DF00A18181 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0408DF5E25A4EFAD001DD0CB /* ViewModel */,
 				049E707E25A4EBF200829C58 /* DataSource */,
 				04704B8C25A48F02008A327D /* EventListViewController.swift */,
 				049E706E25A4E93500829C58 /* EventListView.swift */,
@@ -215,6 +217,7 @@
 				0481AB0725A4A7D5003B6146 /* Helper */,
 				0481AB0325A4A738003B6146 /* URLSessionManagerTests.swift */,
 				04ECCA6B25A4DAB7003AAB6A /* EventServiceTests.swift */,
+				044D363925A4F7FB0094451D /* EventListViewModelTests.swift */,
 				0481AAF425A4A61D003B6146 /* Info.plist */,
 			);
 			path = MeventsUnitTests;
@@ -491,6 +494,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0481AB0925A4A7DF003B6146 /* FakeServiceInfo.swift in Sources */,
+				044D363A25A4F7FB0094451D /* EventListViewModelTests.swift in Sources */,
 				0481AB0425A4A738003B6146 /* URLSessionManagerTests.swift in Sources */,
 				04ECCA6C25A4DAB7003AAB6A /* EventServiceTests.swift in Sources */,
 			);
