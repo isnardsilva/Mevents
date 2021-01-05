@@ -13,6 +13,7 @@
 		04704B9025A48F02008A327D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04704B8E25A48F02008A327D /* Main.storyboard */; };
 		04704B9225A48F04008A327D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04704B9125A48F04008A327D /* Assets.xcassets */; };
 		04704B9525A48F04008A327D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04704B9325A48F04008A327D /* LaunchScreen.storyboard */; };
+		DFB272765091C2A96CA71EE2 /* Pods_Mevents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1407D4FE3C40C89DF6D63280 /* Pods_Mevents.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,9 @@
 		04704B9425A48F04008A327D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04704B9625A48F04008A327D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04704B9E25A48F7D008A327D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1407D4FE3C40C89DF6D63280 /* Pods_Mevents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mevents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D187107AE7339CA53490E1E /* Pods-Mevents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mevents.release.xcconfig"; path = "Target Support Files/Pods-Mevents/Pods-Mevents.release.xcconfig"; sourceTree = "<group>"; };
+		E6876D2552C3A80626496E76 /* Pods-Mevents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mevents.debug.xcconfig"; path = "Target Support Files/Pods-Mevents/Pods-Mevents.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,18 +36,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFB272765091C2A96CA71EE2 /* Pods_Mevents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00F3F58243A13D1342751DA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6876D2552C3A80626496E76 /* Pods-Mevents.debug.xcconfig */,
+				1D187107AE7339CA53490E1E /* Pods-Mevents.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		04704B7C25A48F02008A327D = {
 			isa = PBXGroup;
 			children = (
 				04704B9E25A48F7D008A327D /* README.md */,
 				04704B8725A48F02008A327D /* Mevents */,
 				04704B8625A48F02008A327D /* Products */,
+				00F3F58243A13D1342751DA3 /* Pods */,
+				233BC3EFB49799BE16DFEBB2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +85,14 @@
 			path = Mevents;
 			sourceTree = "<group>";
 		};
+		233BC3EFB49799BE16DFEBB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1407D4FE3C40C89DF6D63280 /* Pods_Mevents.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +100,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04704B9925A48F04008A327D /* Build configuration list for PBXNativeTarget "Mevents" */;
 			buildPhases = (
+				A67C704AF724B03529231458 /* [CP] Check Pods Manifest.lock */,
 				04704B8125A48F02008A327D /* Sources */,
 				04704B8225A48F02008A327D /* Frameworks */,
 				04704B8325A48F02008A327D /* Resources */,
+				044CD28125A494D000A18181 /* Swift Lint */,
 			);
 			buildRules = (
 			);
@@ -133,6 +159,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		044CD28125A494D000A18181 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		A67C704AF724B03529231458 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mevents-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04704B8125A48F02008A327D /* Sources */ = {
@@ -285,6 +354,7 @@
 		};
 		04704B9A25A48F04008A327D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6876D2552C3A80626496E76 /* Pods-Mevents.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -305,6 +375,7 @@
 		};
 		04704B9B25A48F04008A327D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D187107AE7339CA53490E1E /* Pods-Mevents.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
