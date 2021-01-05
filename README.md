@@ -9,7 +9,7 @@ Aplicativo que exibe uma lista de eventos e permite fazer check-in nos eventos d
 
 
 ## Funcionalidades
-- [ ] Consumir uma API REST
+- [x] Consumir uma API REST
 - [ ] Exibir a listagem de eventos
 - [ ] Exibir os detalhes de cada evento
 - [ ] Realizar o check-in em cima de um evento
@@ -36,11 +36,11 @@ Aplicativo que exibe uma lista de eventos e permite fazer check-in nos eventos d
 - [x] Adicionar .gitignore e README
 - [x] Adicionar o Xcode project
 - [x] Adicionar o Swift Lint via Cocoa Pods
-- [ ] Implementar o Coordinator Pattern
-- [ ] Implementar a camada de Network
-- [ ] Testar a camada de Network
-- [ ] Implementar a obtenção dos eventos da API (Event Service)
-- [ ] Testar a classe Event Service
+- [x] Implementar o Coordinator Pattern
+- [x] Implementar a camada de Network
+- [x] Testar a camada de Network
+- [x] Implementar a obtenção dos eventos da API (Event Service)
+- [x] Testar a classe Event Service
 - [ ] Implementar a tela de listagem de eventos
 - [ ] Implementar a tela que exibe os detalhes dos eventos
 - [ ] Implementar o ato de fazer check-in
