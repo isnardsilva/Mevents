@@ -12,6 +12,8 @@
 		04704B8D25A48F02008A327D /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04704B8C25A48F02008A327D /* EventListViewController.swift */; };
 		04704B9225A48F04008A327D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04704B9125A48F04008A327D /* Assets.xcassets */; };
 		04704B9525A48F04008A327D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04704B9325A48F04008A327D /* LaunchScreen.storyboard */; };
+		0481AAE625A49EA8003B6146 /* URLSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481AAE525A49EA8003B6146 /* URLSessionManager.swift */; };
+		0481AAE925A4A554003B6146 /* HTTPResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481AAE825A4A554003B6146 /* HTTPResponseType.swift */; };
 		04FA0B8E25A4982A007C81BD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA0B8D25A4982A007C81BD /* Coordinator.swift */; };
 		04FA0B9125A49878007C81BD /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA0B9025A49878007C81BD /* MainCoordinator.swift */; };
 		04FA0B9925A49BF9007C81BD /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA0B9825A49BF9007C81BD /* NetworkManagerProtocol.swift */; };
@@ -30,6 +32,8 @@
 		04704B9425A48F04008A327D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04704B9625A48F04008A327D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04704B9E25A48F7D008A327D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0481AAE525A49EA8003B6146 /* URLSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionManager.swift; sourceTree = "<group>"; };
+		0481AAE825A4A554003B6146 /* HTTPResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponseType.swift; sourceTree = "<group>"; };
 		04FA0B8D25A4982A007C81BD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		04FA0B9025A49878007C81BD /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		04FA0B9825A49BF9007C81BD /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
@@ -137,6 +141,14 @@
 			path = Mevents;
 			sourceTree = "<group>";
 		};
+		0481AAE425A49E9A003B6146 /* URLSession */ = {
+			isa = PBXGroup;
+			children = (
+				0481AAE525A49EA8003B6146 /* URLSessionManager.swift */,
+			);
+			path = URLSession;
+			sourceTree = "<group>";
+		};
 		04FA0B8725A497EF007C81BD /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				04FA0B9B25A49C0C007C81BD /* NetworkManager */,
+				0481AAE425A49E9A003B6146 /* URLSession */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -157,8 +170,9 @@
 		04FA0B9B25A49C0C007C81BD /* NetworkManager */ = {
 			isa = PBXGroup;
 			children = (
-				04FA0BA525A49C97007C81BD /* ServiceProtocol.swift */,
 				04FA0BA825A49CB3007C81BD /* HTTPMethod.swift */,
+				0481AAE825A4A554003B6146 /* HTTPResponseType.swift */,
+				04FA0BA525A49C97007C81BD /* ServiceProtocol.swift */,
 				04FA0B9825A49BF9007C81BD /* NetworkManagerProtocol.swift */,
 			);
 			path = NetworkManager;
@@ -303,9 +317,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				04FA0B8E25A4982A007C81BD /* Coordinator.swift in Sources */,
+				0481AAE925A4A554003B6146 /* HTTPResponseType.swift in Sources */,
 				04704B8D25A48F02008A327D /* EventListViewController.swift in Sources */,
 				04704B8925A48F02008A327D /* AppDelegate.swift in Sources */,
 				04FA0B9125A49878007C81BD /* MainCoordinator.swift in Sources */,
+				0481AAE625A49EA8003B6146 /* URLSessionManager.swift in Sources */,
 				04FA0BA925A49CB3007C81BD /* HTTPMethod.swift in Sources */,
 				04FA0B9925A49BF9007C81BD /* NetworkManagerProtocol.swift in Sources */,
 				04FA0BB025A49DA6007C81BD /* NetworkError.swift in Sources */,
