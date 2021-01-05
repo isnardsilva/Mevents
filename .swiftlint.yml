@@ -56,4 +56,6 @@ identifier_name:
   excluded: # excluded via string array
     - id
     - GET
+    - url
+    - URL
 reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, codeclimate, junit, html, emoji, sonarqube, markdown, github-actions-logging)
