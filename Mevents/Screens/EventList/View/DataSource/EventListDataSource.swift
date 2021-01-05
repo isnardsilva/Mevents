@@ -24,7 +24,7 @@ final class EventListDataSource: NSObject {
 // MARK: - UICollectionViewDataSource
 extension EventListDataSource: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return events.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -47,8 +47,8 @@ extension EventListDataSource: UICollectionViewDelegate {
 extension EventListDataSource: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let leftSectionInsets: CGFloat = 8
-        let rightSectionInsets: CGFloat = 8
+        let leftSectionInsets: CGFloat = 20
+        let rightSectionInsets: CGFloat = 20
         
         let paddingSpace = leftSectionInsets + rightSectionInsets
         let availableWidth = collectionView.frame.width - paddingSpace
@@ -57,6 +57,6 @@ extension EventListDataSource: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 8, left: 8, bottom: 0, right: 8)
+        return UIEdgeInsets(top: 8, left: 20, bottom: 0, right: 20)
     }
 }

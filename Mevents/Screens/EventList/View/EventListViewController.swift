@@ -9,8 +9,22 @@ import UIKit
 
 final class EventListViewController: UIViewController {
     // MARK: - Properties
-    private lazy var baseView = EventListView()
     weak var coordinator: MainCoordinator?
+    
+    private lazy var baseView = EventListView()
+    private lazy var viewModel: EventListViewModel = {
+        let viewModel = EventListViewModel()
+        
+        viewModel.didReceiveEvents = { [weak self] in
+            self?.didReceiveEvents()
+        }
+        
+        viewModel.didReceiveError = { [weak self] error in
+            self?.didReceiveError(error)
+        }
+        
+        return viewModel
+    }()
     
     private var dataSource: EventListDataSource? {
         didSet {
@@ -42,7 +56,18 @@ final class EventListViewController: UIViewController {
         navigationItem.title = "Mevent"
         navigationController?.navigationBar.prefersLargeTitles = true
         
-        dataSource = EventListDataSource(events: [])
+        viewModel.fetchEvents()
+    }
+}
+
+// MARK: - Handle View Model Responses
+extension EventListViewController {
+    private func didReceiveEvents() {
+        dataSource = EventListDataSource(events: viewModel.events)
+    }
+    
+    private func didReceiveError(_ error: Error) {
+        print(error.localizedDescription)
     }
 }
 
@@ -50,6 +75,6 @@ final class EventListViewController: UIViewController {
 // MARK: - Handle Event Selection
 extension EventListViewController {
     private func didSelectEvent(_ event: Event) {
-        print("Selected")
+        print("Selected event:", event.title)
     }
 }
