@@ -12,8 +12,8 @@ final class EventListView: UIView {
     lazy var collectionView: UICollectionView = {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
         collectionView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-        collectionView.backgroundColor = .blue
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: Identifier.Cell.eventCell)
+        collectionView.backgroundColor = .clear
+        collectionView.register(EventCell.self, forCellWithReuseIdentifier: Identifier.Cell.eventCell)
         return collectionView
     }()
     
@@ -42,6 +42,6 @@ extension EventListView: ViewCodable {
     }
     
     func setupAditionalConfiguration() {
-        backgroundColor = .systemBackground
+        backgroundColor = UIColor(named: Identifier.Color.mainBackgroundColor)
     }
 }

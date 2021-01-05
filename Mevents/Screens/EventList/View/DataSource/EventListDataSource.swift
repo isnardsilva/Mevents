@@ -28,8 +28,13 @@ extension EventListDataSource: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Identifier.Cell.eventCell, for: indexPath)
-        cell.backgroundColor = .gray
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Identifier.Cell.eventCell, for: indexPath) as? EventCell else {
+            fatalError("Error to load cell as a EventCell class")
+        }
+        
+        let currentEvent = events[indexPath.row]
+        cell.eventViewModel = EventViewModel(event: currentEvent)
+        
         return cell
     }
 }
@@ -53,7 +58,7 @@ extension EventListDataSource: UICollectionViewDelegateFlowLayout {
         let paddingSpace = leftSectionInsets + rightSectionInsets
         let availableWidth = collectionView.frame.width - paddingSpace
         
-        return CGSize(width: availableWidth, height: 250)
+        return CGSize(width: availableWidth, height: 300)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

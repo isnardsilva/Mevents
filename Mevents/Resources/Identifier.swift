@@ -11,4 +11,15 @@ enum Identifier {
     enum Cell {
         static let eventCell = "eventCell"
     }
+    
+    
+    enum Color {
+        static let mainBackgroundColor = "mainBackgroundColor"
+        static let cellBackgroundColor = "cellBackgroundColor"
+    }
+    
+    
+    enum Image {
+        static let defaultImage = "default-image"
+    }
 }

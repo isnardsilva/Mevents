@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class EventListViewModel {
+class EventListViewModel {
     // MARK: - Properties
     private let eventService = EventService()
     private(set) var events: [Event]
