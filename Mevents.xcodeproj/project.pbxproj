@@ -14,6 +14,10 @@
 		04704B9525A48F04008A327D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04704B9325A48F04008A327D /* LaunchScreen.storyboard */; };
 		04FA0B8E25A4982A007C81BD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA0B8D25A4982A007C81BD /* Coordinator.swift */; };
 		04FA0B9125A49878007C81BD /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA0B9025A49878007C81BD /* MainCoordinator.swift */; };
+		04FA0B9925A49BF9007C81BD /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA0B9825A49BF9007C81BD /* NetworkManagerProtocol.swift */; };
+		04FA0BA625A49C97007C81BD /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA0BA525A49C97007C81BD /* ServiceProtocol.swift */; };
+		04FA0BA925A49CB3007C81BD /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA0BA825A49CB3007C81BD /* HTTPMethod.swift */; };
+		04FA0BB025A49DA6007C81BD /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA0BAF25A49DA6007C81BD /* NetworkError.swift */; };
 		DFB272765091C2A96CA71EE2 /* Pods_Mevents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1407D4FE3C40C89DF6D63280 /* Pods_Mevents.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +32,10 @@
 		04704B9E25A48F7D008A327D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		04FA0B8D25A4982A007C81BD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		04FA0B9025A49878007C81BD /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		04FA0B9825A49BF9007C81BD /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
+		04FA0BA525A49C97007C81BD /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
+		04FA0BA825A49CB3007C81BD /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		04FA0BAF25A49DA6007C81BD /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		1407D4FE3C40C89DF6D63280 /* Pods_Mevents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mevents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D187107AE7339CA53490E1E /* Pods-Mevents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mevents.release.xcconfig"; path = "Target Support Files/Pods-Mevents/Pods-Mevents.release.xcconfig"; sourceTree = "<group>"; };
 		E6876D2552C3A80626496E76 /* Pods-Mevents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mevents.debug.xcconfig"; path = "Target Support Files/Pods-Mevents/Pods-Mevents.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,7 +128,9 @@
 			children = (
 				044CD28525A496A300A18181 /* AppDelegate */,
 				04FA0B8725A497EF007C81BD /* Coordinator */,
+				04FA0B9725A49BDB007C81BD /* Network */,
 				044CD28625A496AE00A18181 /* Screens */,
+				04FA0BAD25A49D89007C81BD /* Resources */,
 				04704B9125A48F04008A327D /* Assets.xcassets */,
 				04704B9625A48F04008A327D /* Info.plist */,
 			);
@@ -134,6 +144,40 @@
 				04FA0B9025A49878007C81BD /* MainCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		04FA0B9725A49BDB007C81BD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				04FA0B9B25A49C0C007C81BD /* NetworkManager */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		04FA0B9B25A49C0C007C81BD /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				04FA0BA525A49C97007C81BD /* ServiceProtocol.swift */,
+				04FA0BA825A49CB3007C81BD /* HTTPMethod.swift */,
+				04FA0B9825A49BF9007C81BD /* NetworkManagerProtocol.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		04FA0BAD25A49D89007C81BD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04FA0BAE25A49D92007C81BD /* ErrorHandling */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		04FA0BAE25A49D92007C81BD /* ErrorHandling */ = {
+			isa = PBXGroup;
+			children = (
+				04FA0BAF25A49DA6007C81BD /* NetworkError.swift */,
+			);
+			path = ErrorHandling;
 			sourceTree = "<group>";
 		};
 		233BC3EFB49799BE16DFEBB2 /* Frameworks */ = {
@@ -262,6 +306,10 @@
 				04704B8D25A48F02008A327D /* EventListViewController.swift in Sources */,
 				04704B8925A48F02008A327D /* AppDelegate.swift in Sources */,
 				04FA0B9125A49878007C81BD /* MainCoordinator.swift in Sources */,
+				04FA0BA925A49CB3007C81BD /* HTTPMethod.swift in Sources */,
+				04FA0B9925A49BF9007C81BD /* NetworkManagerProtocol.swift in Sources */,
+				04FA0BB025A49DA6007C81BD /* NetworkError.swift in Sources */,
+				04FA0BA625A49C97007C81BD /* ServiceProtocol.swift in Sources */,
 				04704B8B25A48F02008A327D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

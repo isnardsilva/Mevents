@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+/// Especifica o tipo de requisição que será feita
+enum HTTPMethod: String {
+    case GET
+    case POST
+}
