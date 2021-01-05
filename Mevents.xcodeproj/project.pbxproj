@@ -17,6 +17,11 @@
 		0481AAFE25A4A64B003B6146 /* EventAPISources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481AAFD25A4A64B003B6146 /* EventAPISources.swift */; };
 		0481AB0425A4A738003B6146 /* URLSessionManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481AB0325A4A738003B6146 /* URLSessionManagerTests.swift */; };
 		0481AB0925A4A7DF003B6146 /* FakeServiceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481AB0825A4A7DF003B6146 /* FakeServiceInfo.swift */; };
+		049D5DE125A4D6DA00054917 /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D5DE025A4D6DA00054917 /* EventService.swift */; };
+		049D5DE725A4D6FF00054917 /* EventServiceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D5DE625A4D6FF00054917 /* EventServiceInfo.swift */; };
+		049D5DEE25A4D7C300054917 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D5DED25A4D7C300054917 /* Event.swift */; };
+		04ECCA6825A4D9F5003AAB6A /* EventServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECCA6725A4D9F5003AAB6A /* EventServiceError.swift */; };
+		04ECCA6C25A4DAB7003AAB6A /* EventServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECCA6B25A4DAB7003AAB6A /* EventServiceTests.swift */; };
 		04FA0B8E25A4982A007C81BD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA0B8D25A4982A007C81BD /* Coordinator.swift */; };
 		04FA0B9125A49878007C81BD /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA0B9025A49878007C81BD /* MainCoordinator.swift */; };
 		04FA0B9925A49BF9007C81BD /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA0B9825A49BF9007C81BD /* NetworkManagerProtocol.swift */; };
@@ -52,6 +57,11 @@
 		0481AAFD25A4A64B003B6146 /* EventAPISources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAPISources.swift; sourceTree = "<group>"; };
 		0481AB0325A4A738003B6146 /* URLSessionManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionManagerTests.swift; sourceTree = "<group>"; };
 		0481AB0825A4A7DF003B6146 /* FakeServiceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeServiceInfo.swift; sourceTree = "<group>"; };
+		049D5DE025A4D6DA00054917 /* EventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
+		049D5DE625A4D6FF00054917 /* EventServiceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventServiceInfo.swift; sourceTree = "<group>"; };
+		049D5DED25A4D7C300054917 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		04ECCA6725A4D9F5003AAB6A /* EventServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventServiceError.swift; sourceTree = "<group>"; };
+		04ECCA6B25A4DAB7003AAB6A /* EventServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventServiceTests.swift; sourceTree = "<group>"; };
 		04FA0B8D25A4982A007C81BD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		04FA0B9025A49878007C81BD /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		04FA0B9825A49BF9007C81BD /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
@@ -159,7 +169,9 @@
 			children = (
 				044CD28525A496A300A18181 /* AppDelegate */,
 				04FA0B8725A497EF007C81BD /* Coordinator */,
+				049D5DEC25A4D7AE00054917 /* Model */,
 				04FA0B9725A49BDB007C81BD /* Network */,
+				049D5DDE25A4D6C800054917 /* Service */,
 				044CD28625A496AE00A18181 /* Screens */,
 				04FA0BAD25A49D89007C81BD /* Resources */,
 				04704B9125A48F04008A327D /* Assets.xcassets */,
@@ -181,6 +193,7 @@
 			children = (
 				0481AB0725A4A7D5003B6146 /* Helper */,
 				0481AB0325A4A738003B6146 /* URLSessionManagerTests.swift */,
+				04ECCA6B25A4DAB7003AAB6A /* EventServiceTests.swift */,
 				0481AAF425A4A61D003B6146 /* Info.plist */,
 			);
 			path = MeventsUnitTests;
@@ -192,6 +205,31 @@
 				0481AB0825A4A7DF003B6146 /* FakeServiceInfo.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		049D5DDE25A4D6C800054917 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				049D5DDF25A4D6D000054917 /* Event */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		049D5DDF25A4D6D000054917 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				049D5DE625A4D6FF00054917 /* EventServiceInfo.swift */,
+				049D5DE025A4D6DA00054917 /* EventService.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		049D5DEC25A4D7AE00054917 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				049D5DED25A4D7C300054917 /* Event.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		04FA0B8725A497EF007C81BD /* Coordinator */ = {
@@ -236,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				04FA0BAF25A49DA6007C81BD /* NetworkError.swift */,
+				04ECCA6725A4D9F5003AAB6A /* EventServiceError.swift */,
 			);
 			path = ErrorHandling;
 			sourceTree = "<group>";
@@ -394,7 +433,9 @@
 			files = (
 				04FA0B8E25A4982A007C81BD /* Coordinator.swift in Sources */,
 				0481AAE925A4A554003B6146 /* HTTPResponseType.swift in Sources */,
+				049D5DE725A4D6FF00054917 /* EventServiceInfo.swift in Sources */,
 				04704B8D25A48F02008A327D /* EventListViewController.swift in Sources */,
+				049D5DEE25A4D7C300054917 /* Event.swift in Sources */,
 				04704B8925A48F02008A327D /* AppDelegate.swift in Sources */,
 				0481AAFE25A4A64B003B6146 /* EventAPISources.swift in Sources */,
 				04FA0B9125A49878007C81BD /* MainCoordinator.swift in Sources */,
@@ -403,7 +444,9 @@
 				04FA0B9925A49BF9007C81BD /* NetworkManagerProtocol.swift in Sources */,
 				04FA0BB025A49DA6007C81BD /* NetworkError.swift in Sources */,
 				04FA0BA625A49C97007C81BD /* ServiceProtocol.swift in Sources */,
+				049D5DE125A4D6DA00054917 /* EventService.swift in Sources */,
 				04704B8B25A48F02008A327D /* SceneDelegate.swift in Sources */,
+				04ECCA6825A4D9F5003AAB6A /* EventServiceError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +456,7 @@
 			files = (
 				0481AB0925A4A7DF003B6146 /* FakeServiceInfo.swift in Sources */,
 				0481AB0425A4A738003B6146 /* URLSessionManagerTests.swift in Sources */,
+				04ECCA6C25A4DAB7003AAB6A /* EventServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
