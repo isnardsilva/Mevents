@@ -12,10 +12,29 @@
 		04704B8D25A48F02008A327D /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04704B8C25A48F02008A327D /* EventListViewController.swift */; };
 		04704B9225A48F04008A327D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04704B9125A48F04008A327D /* Assets.xcassets */; };
 		04704B9525A48F04008A327D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04704B9325A48F04008A327D /* LaunchScreen.storyboard */; };
+		0481AAE625A49EA8003B6146 /* URLSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481AAE525A49EA8003B6146 /* URLSessionManager.swift */; };
+		0481AAE925A4A554003B6146 /* HTTPResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481AAE825A4A554003B6146 /* HTTPResponseType.swift */; };
+		0481AAFE25A4A64B003B6146 /* EventAPISources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481AAFD25A4A64B003B6146 /* EventAPISources.swift */; };
+		0481AB0425A4A738003B6146 /* URLSessionManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481AB0325A4A738003B6146 /* URLSessionManagerTests.swift */; };
+		0481AB0925A4A7DF003B6146 /* FakeServiceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481AB0825A4A7DF003B6146 /* FakeServiceInfo.swift */; };
 		04FA0B8E25A4982A007C81BD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA0B8D25A4982A007C81BD /* Coordinator.swift */; };
 		04FA0B9125A49878007C81BD /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA0B9025A49878007C81BD /* MainCoordinator.swift */; };
+		04FA0B9925A49BF9007C81BD /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA0B9825A49BF9007C81BD /* NetworkManagerProtocol.swift */; };
+		04FA0BA625A49C97007C81BD /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA0BA525A49C97007C81BD /* ServiceProtocol.swift */; };
+		04FA0BA925A49CB3007C81BD /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA0BA825A49CB3007C81BD /* HTTPMethod.swift */; };
+		04FA0BB025A49DA6007C81BD /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA0BAF25A49DA6007C81BD /* NetworkError.swift */; };
 		DFB272765091C2A96CA71EE2 /* Pods_Mevents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1407D4FE3C40C89DF6D63280 /* Pods_Mevents.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0481AAF525A4A61D003B6146 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04704B7D25A48F02008A327D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04704B8425A48F02008A327D;
+			remoteInfo = Mevents;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		04704B8525A48F02008A327D /* Mevents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mevents.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,8 +45,19 @@
 		04704B9425A48F04008A327D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04704B9625A48F04008A327D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04704B9E25A48F7D008A327D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0481AAE525A49EA8003B6146 /* URLSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionManager.swift; sourceTree = "<group>"; };
+		0481AAE825A4A554003B6146 /* HTTPResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponseType.swift; sourceTree = "<group>"; };
+		0481AAF025A4A61D003B6146 /* MeventsUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeventsUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0481AAF425A4A61D003B6146 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0481AAFD25A4A64B003B6146 /* EventAPISources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAPISources.swift; sourceTree = "<group>"; };
+		0481AB0325A4A738003B6146 /* URLSessionManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionManagerTests.swift; sourceTree = "<group>"; };
+		0481AB0825A4A7DF003B6146 /* FakeServiceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeServiceInfo.swift; sourceTree = "<group>"; };
 		04FA0B8D25A4982A007C81BD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		04FA0B9025A49878007C81BD /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		04FA0B9825A49BF9007C81BD /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
+		04FA0BA525A49C97007C81BD /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
+		04FA0BA825A49CB3007C81BD /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		04FA0BAF25A49DA6007C81BD /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		1407D4FE3C40C89DF6D63280 /* Pods_Mevents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mevents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D187107AE7339CA53490E1E /* Pods-Mevents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mevents.release.xcconfig"; path = "Target Support Files/Pods-Mevents/Pods-Mevents.release.xcconfig"; sourceTree = "<group>"; };
 		E6876D2552C3A80626496E76 /* Pods-Mevents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mevents.debug.xcconfig"; path = "Target Support Files/Pods-Mevents/Pods-Mevents.debug.xcconfig"; sourceTree = "<group>"; };
@@ -39,6 +69,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFB272765091C2A96CA71EE2 /* Pods_Mevents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0481AAED25A4A61D003B6146 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +138,7 @@
 			children = (
 				04704B9E25A48F7D008A327D /* README.md */,
 				04704B8725A48F02008A327D /* Mevents */,
+				0481AAF125A4A61D003B6146 /* MeventsUnitTests */,
 				04704B8625A48F02008A327D /* Products */,
 				00F3F58243A13D1342751DA3 /* Pods */,
 				233BC3EFB49799BE16DFEBB2 /* Frameworks */,
@@ -111,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				04704B8525A48F02008A327D /* Mevents.app */,
+				0481AAF025A4A61D003B6146 /* MeventsUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,11 +159,39 @@
 			children = (
 				044CD28525A496A300A18181 /* AppDelegate */,
 				04FA0B8725A497EF007C81BD /* Coordinator */,
+				04FA0B9725A49BDB007C81BD /* Network */,
 				044CD28625A496AE00A18181 /* Screens */,
+				04FA0BAD25A49D89007C81BD /* Resources */,
 				04704B9125A48F04008A327D /* Assets.xcassets */,
 				04704B9625A48F04008A327D /* Info.plist */,
 			);
 			path = Mevents;
+			sourceTree = "<group>";
+		};
+		0481AAE425A49E9A003B6146 /* URLSession */ = {
+			isa = PBXGroup;
+			children = (
+				0481AAE525A49EA8003B6146 /* URLSessionManager.swift */,
+			);
+			path = URLSession;
+			sourceTree = "<group>";
+		};
+		0481AAF125A4A61D003B6146 /* MeventsUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				0481AB0725A4A7D5003B6146 /* Helper */,
+				0481AB0325A4A738003B6146 /* URLSessionManagerTests.swift */,
+				0481AAF425A4A61D003B6146 /* Info.plist */,
+			);
+			path = MeventsUnitTests;
+			sourceTree = "<group>";
+		};
+		0481AB0725A4A7D5003B6146 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0481AB0825A4A7DF003B6146 /* FakeServiceInfo.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		04FA0B8725A497EF007C81BD /* Coordinator */ = {
@@ -134,6 +201,43 @@
 				04FA0B9025A49878007C81BD /* MainCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		04FA0B9725A49BDB007C81BD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				04FA0B9B25A49C0C007C81BD /* NetworkManager */,
+				0481AAE425A49E9A003B6146 /* URLSession */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		04FA0B9B25A49C0C007C81BD /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				04FA0BA825A49CB3007C81BD /* HTTPMethod.swift */,
+				0481AAE825A4A554003B6146 /* HTTPResponseType.swift */,
+				04FA0BA525A49C97007C81BD /* ServiceProtocol.swift */,
+				04FA0B9825A49BF9007C81BD /* NetworkManagerProtocol.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		04FA0BAD25A49D89007C81BD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04FA0BAE25A49D92007C81BD /* ErrorHandling */,
+				0481AAFD25A4A64B003B6146 /* EventAPISources.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		04FA0BAE25A49D92007C81BD /* ErrorHandling */ = {
+			isa = PBXGroup;
+			children = (
+				04FA0BAF25A49DA6007C81BD /* NetworkError.swift */,
+			);
+			path = ErrorHandling;
 			sourceTree = "<group>";
 		};
 		233BC3EFB49799BE16DFEBB2 /* Frameworks */ = {
@@ -166,6 +270,24 @@
 			productReference = 04704B8525A48F02008A327D /* Mevents.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0481AAEF25A4A61D003B6146 /* MeventsUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0481AAF725A4A61D003B6146 /* Build configuration list for PBXNativeTarget "MeventsUnitTests" */;
+			buildPhases = (
+				0481AAEC25A4A61D003B6146 /* Sources */,
+				0481AAED25A4A61D003B6146 /* Frameworks */,
+				0481AAEE25A4A61D003B6146 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0481AAF625A4A61D003B6146 /* PBXTargetDependency */,
+			);
+			name = MeventsUnitTests;
+			productName = MeventsUnitTests;
+			productReference = 0481AAF025A4A61D003B6146 /* MeventsUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -177,6 +299,10 @@
 				TargetAttributes = {
 					04704B8425A48F02008A327D = {
 						CreatedOnToolsVersion = 12.3;
+					};
+					0481AAEF25A4A61D003B6146 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 04704B8425A48F02008A327D;
 					};
 				};
 			};
@@ -194,6 +320,7 @@
 			projectRoot = "";
 			targets = (
 				04704B8425A48F02008A327D /* Mevents */,
+				0481AAEF25A4A61D003B6146 /* MeventsUnitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +332,13 @@
 			files = (
 				04704B9525A48F04008A327D /* LaunchScreen.storyboard in Resources */,
 				04704B9225A48F04008A327D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0481AAEE25A4A61D003B6146 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,14 +393,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				04FA0B8E25A4982A007C81BD /* Coordinator.swift in Sources */,
+				0481AAE925A4A554003B6146 /* HTTPResponseType.swift in Sources */,
 				04704B8D25A48F02008A327D /* EventListViewController.swift in Sources */,
 				04704B8925A48F02008A327D /* AppDelegate.swift in Sources */,
+				0481AAFE25A4A64B003B6146 /* EventAPISources.swift in Sources */,
 				04FA0B9125A49878007C81BD /* MainCoordinator.swift in Sources */,
+				0481AAE625A49EA8003B6146 /* URLSessionManager.swift in Sources */,
+				04FA0BA925A49CB3007C81BD /* HTTPMethod.swift in Sources */,
+				04FA0B9925A49BF9007C81BD /* NetworkManagerProtocol.swift in Sources */,
+				04FA0BB025A49DA6007C81BD /* NetworkError.swift in Sources */,
+				04FA0BA625A49C97007C81BD /* ServiceProtocol.swift in Sources */,
 				04704B8B25A48F02008A327D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0481AAEC25A4A61D003B6146 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0481AB0925A4A7DF003B6146 /* FakeServiceInfo.swift in Sources */,
+				0481AB0425A4A738003B6146 /* URLSessionManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0481AAF625A4A61D003B6146 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04704B8425A48F02008A327D /* Mevents */;
+			targetProxy = 0481AAF525A4A61D003B6146 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		04704B9325A48F04008A327D /* LaunchScreen.storyboard */ = {
@@ -438,6 +596,48 @@
 			};
 			name = Release;
 		};
+		0481AAF825A4A61D003B6146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FP388F7HF3;
+				INFOPLIST_FILE = MeventsUnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.isnardsilva.MeventsUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mevents.app/Mevents";
+			};
+			name = Debug;
+		};
+		0481AAF925A4A61D003B6146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FP388F7HF3;
+				INFOPLIST_FILE = MeventsUnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.isnardsilva.MeventsUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mevents.app/Mevents";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -455,6 +655,15 @@
 			buildConfigurations = (
 				04704B9A25A48F04008A327D /* Debug */,
 				04704B9B25A48F04008A327D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0481AAF725A4A61D003B6146 /* Build configuration list for PBXNativeTarget "MeventsUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0481AAF825A4A61D003B6146 /* Debug */,
+				0481AAF925A4A61D003B6146 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
