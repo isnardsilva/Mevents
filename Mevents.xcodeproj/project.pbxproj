@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		04704B8925A48F02008A327D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04704B8825A48F02008A327D /* AppDelegate.swift */; };
 		04704B8B25A48F02008A327D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04704B8A25A48F02008A327D /* SceneDelegate.swift */; };
-		04704B8D25A48F02008A327D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04704B8C25A48F02008A327D /* ViewController.swift */; };
+		04704B8D25A48F02008A327D /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04704B8C25A48F02008A327D /* EventListViewController.swift */; };
 		04704B9025A48F02008A327D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04704B8E25A48F02008A327D /* Main.storyboard */; };
 		04704B9225A48F04008A327D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04704B9125A48F04008A327D /* Assets.xcassets */; };
 		04704B9525A48F04008A327D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04704B9325A48F04008A327D /* LaunchScreen.storyboard */; };
@@ -20,7 +20,7 @@
 		04704B8525A48F02008A327D /* Mevents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mevents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04704B8825A48F02008A327D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04704B8A25A48F02008A327D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04704B8C25A48F02008A327D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04704B8C25A48F02008A327D /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
 		04704B8F25A48F02008A327D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04704B9125A48F04008A327D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04704B9425A48F04008A327D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,6 +52,49 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		044CD28525A496A300A18181 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				04704B8825A48F02008A327D /* AppDelegate.swift */,
+				04704B8A25A48F02008A327D /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		044CD28625A496AE00A18181 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				044CD28725A496BA00A18181 /* LaunchScreen */,
+				044CD28825A496C900A18181 /* EventList */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		044CD28725A496BA00A18181 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				04704B9325A48F04008A327D /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		044CD28825A496C900A18181 /* EventList */ = {
+			isa = PBXGroup;
+			children = (
+				044CD28A25A496DF00A18181 /* View */,
+			);
+			path = EventList;
+			sourceTree = "<group>";
+		};
+		044CD28A25A496DF00A18181 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04704B8C25A48F02008A327D /* EventListViewController.swift */,
+				04704B8E25A48F02008A327D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		04704B7C25A48F02008A327D = {
 			isa = PBXGroup;
 			children = (
@@ -74,12 +117,9 @@
 		04704B8725A48F02008A327D /* Mevents */ = {
 			isa = PBXGroup;
 			children = (
-				04704B8825A48F02008A327D /* AppDelegate.swift */,
-				04704B8A25A48F02008A327D /* SceneDelegate.swift */,
-				04704B8C25A48F02008A327D /* ViewController.swift */,
-				04704B8E25A48F02008A327D /* Main.storyboard */,
+				044CD28525A496A300A18181 /* AppDelegate */,
+				044CD28625A496AE00A18181 /* Screens */,
 				04704B9125A48F04008A327D /* Assets.xcassets */,
-				04704B9325A48F04008A327D /* LaunchScreen.storyboard */,
 				04704B9625A48F04008A327D /* Info.plist */,
 			);
 			path = Mevents;
@@ -208,7 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04704B8D25A48F02008A327D /* ViewController.swift in Sources */,
+				04704B8D25A48F02008A327D /* EventListViewController.swift in Sources */,
 				04704B8925A48F02008A327D /* AppDelegate.swift in Sources */,
 				04704B8B25A48F02008A327D /* SceneDelegate.swift in Sources */,
 			);
