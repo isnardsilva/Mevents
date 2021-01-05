@@ -32,9 +32,9 @@ Aplicativo que exibe uma lista de eventos e permite fazer check-in nos eventos d
 
 
 ## Cronograma
-- [ ] Criar o repositório no GitHub
-- [ ] Adicionar .gitignore e README
-- [ ] Adicionar o Xcode project
+- [x] Criar o repositório no GitHub
+- [x] Adicionar .gitignore e README
+- [x] Adicionar o Xcode project
 - [ ] Adicionar o Swift Lint via Cocoa Pods
 - [ ] Implementar o Coordinator Pattern
 - [ ] Implementar a camada de Network
@@ -49,4 +49,4 @@ Aplicativo que exibe uma lista de eventos e permite fazer check-in nos eventos d
 - [ ] Salvar o nome e o e-mail do usuário para facilitar o processo de check-in
 - [ ] Testar o salvamento das informações do usuário
 - [ ] Implementar o sistema de compartilhamento
-
+- [ ] Executar o app em diferentes devices
