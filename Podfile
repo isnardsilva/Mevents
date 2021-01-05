@@ -5,4 +5,5 @@ use_frameworks!
 target 'Mevents' do
   # Pods for Mevents
   pod 'SwiftLint'
+  pod 'Kingfisher'
 end
