@@ -23,6 +23,7 @@
 		049E706F25A4E93500829C58 /* EventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E706E25A4E93500829C58 /* EventListView.swift */; };
 		049E707325A4E94300829C58 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E707225A4E94300829C58 /* Identifier.swift */; };
 		049E707725A4E99200829C58 /* ViewCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E707625A4E99200829C58 /* ViewCodable.swift */; };
+		049E707B25A4EBEB00829C58 /* EventListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E707A25A4EBEB00829C58 /* EventListDataSource.swift */; };
 		04ECCA6825A4D9F5003AAB6A /* EventServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECCA6725A4D9F5003AAB6A /* EventServiceError.swift */; };
 		04ECCA6C25A4DAB7003AAB6A /* EventServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECCA6B25A4DAB7003AAB6A /* EventServiceTests.swift */; };
 		04FA0B8E25A4982A007C81BD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA0B8D25A4982A007C81BD /* Coordinator.swift */; };
@@ -66,6 +67,7 @@
 		049E706E25A4E93500829C58 /* EventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListView.swift; sourceTree = "<group>"; };
 		049E707225A4E94300829C58 /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
 		049E707625A4E99200829C58 /* ViewCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodable.swift; sourceTree = "<group>"; };
+		049E707A25A4EBEB00829C58 /* EventListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListDataSource.swift; sourceTree = "<group>"; };
 		04ECCA6725A4D9F5003AAB6A /* EventServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventServiceError.swift; sourceTree = "<group>"; };
 		04ECCA6B25A4DAB7003AAB6A /* EventServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventServiceTests.swift; sourceTree = "<group>"; };
 		04FA0B8D25A4982A007C81BD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 		044CD28A25A496DF00A18181 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				049E707E25A4EBF200829C58 /* DataSource */,
 				04704B8C25A48F02008A327D /* EventListViewController.swift */,
 				049E706E25A4E93500829C58 /* EventListView.swift */,
 			);
@@ -237,6 +240,14 @@
 				049D5DED25A4D7C300054917 /* Event.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		049E707E25A4EBF200829C58 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				049E707A25A4EBEB00829C58 /* EventListDataSource.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 		04FA0B8725A497EF007C81BD /* Coordinator */ = {
@@ -457,6 +468,7 @@
 				04FA0BA625A49C97007C81BD /* ServiceProtocol.swift in Sources */,
 				049D5DE125A4D6DA00054917 /* EventService.swift in Sources */,
 				04704B8B25A48F02008A327D /* SceneDelegate.swift in Sources */,
+				049E707B25A4EBEB00829C58 /* EventListDataSource.swift in Sources */,
 				04ECCA6825A4D9F5003AAB6A /* EventServiceError.swift in Sources */,
 				049E706F25A4E93500829C58 /* EventListView.swift in Sources */,
 			);

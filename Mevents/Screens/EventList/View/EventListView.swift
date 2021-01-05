@@ -9,6 +9,13 @@ import UIKit
 
 final class EventListView: UIView {
     // MARK: - Views
+    lazy var collectionView: UICollectionView = {
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+        collectionView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        collectionView.backgroundColor = .blue
+        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: Identifier.Cell.eventCell)
+        return collectionView
+    }()
     
     
     // MARK: - Initialization
@@ -27,7 +34,7 @@ final class EventListView: UIView {
 // MARK: - View Codable
 extension EventListView: ViewCodable {
     func setupHierarchy() {
-        
+        addSubview(collectionView)
     }
     
     func setupConstraints() {
