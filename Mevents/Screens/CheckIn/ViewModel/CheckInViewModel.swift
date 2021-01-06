@@ -15,17 +15,11 @@ final class CheckInViewModel {
     private var eventId: String?
     
     
-    // MARK: - Service Methods
-    func checkIn(completionHandler: @escaping (Error?) -> Void) {
-        do {
-            let checkIn = try self.getCheckInEntered()
-            
-            eventService.checkIn(checkIn, completionHandler: { error in
-                completionHandler(error)
-            })
-        } catch {
-            completionHandler(error)
-        }
+    // MARK: - Initialization
+    init(checkIn: CheckIn? = nil) {
+        self.eventId = checkIn?.eventId
+        self.userName = checkIn?.userName
+        self.userEmail = checkIn?.userEmail
     }
 }
 
@@ -70,3 +64,20 @@ extension CheckInViewModel {
         return checkIn
     }
 }
+
+
+// MARK: - Service Methods
+extension CheckInViewModel {
+    func checkIn(completionHandler: @escaping (Error?) -> Void) {
+        do {
+            let checkIn = try self.getCheckInEntered()
+            
+            eventService.checkIn(checkIn, completionHandler: { error in
+                completionHandler(error)
+            })
+        } catch {
+            completionHandler(error)
+        }
+    }
+}
+

@@ -55,11 +55,11 @@ final class EventServiceTests: XCTestCase {
     func testCheckIn() {
         // Given
         let user = User(name: "User Test", email: "anyuser@mail.com")
-        let eventId = "1"
+        let checkIn = CheckIn(eventId: "1", userName: user.name, userEmail: user.email)
         let promise = expectation(description: "Call to Check In to an event")
         
         // When
-        sut.checkIn(eventId: eventId, user: user, completionHandler: { error in
+        sut.checkIn(checkIn, completionHandler: { error in
             // Then
             XCTAssertNil(error)
             promise.fulfill()

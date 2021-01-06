@@ -42,6 +42,7 @@
 		049E707325A4E94300829C58 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E707225A4E94300829C58 /* Identifier.swift */; };
 		049E707725A4E99200829C58 /* ViewCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E707625A4E99200829C58 /* ViewCodable.swift */; };
 		049E707B25A4EBEB00829C58 /* EventListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E707A25A4EBEB00829C58 /* EventListDataSource.swift */; };
+		04D1018925A66087009A78D6 /* CheckInViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D1018825A66087009A78D6 /* CheckInViewModelTests.swift */; };
 		04ECCA6825A4D9F5003AAB6A /* EventServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECCA6725A4D9F5003AAB6A /* EventServiceError.swift */; };
 		04ECCA6C25A4DAB7003AAB6A /* EventServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECCA6B25A4DAB7003AAB6A /* EventServiceTests.swift */; };
 		04FA0B8E25A4982A007C81BD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA0B8D25A4982A007C81BD /* Coordinator.swift */; };
@@ -104,6 +105,7 @@
 		049E707225A4E94300829C58 /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
 		049E707625A4E99200829C58 /* ViewCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodable.swift; sourceTree = "<group>"; };
 		049E707A25A4EBEB00829C58 /* EventListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListDataSource.swift; sourceTree = "<group>"; };
+		04D1018825A66087009A78D6 /* CheckInViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInViewModelTests.swift; sourceTree = "<group>"; };
 		04ECCA6725A4D9F5003AAB6A /* EventServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventServiceError.swift; sourceTree = "<group>"; };
 		04ECCA6B25A4DAB7003AAB6A /* EventServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventServiceTests.swift; sourceTree = "<group>"; };
 		04FA0B8D25A4982A007C81BD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -305,6 +307,7 @@
 				04ECCA6B25A4DAB7003AAB6A /* EventServiceTests.swift */,
 				044D363925A4F7FB0094451D /* EventListViewModelTests.swift */,
 				0490AF2325A62CE800D99AA1 /* EventViewModelTests.swift */,
+				04D1018825A66087009A78D6 /* CheckInViewModelTests.swift */,
 				0481AAF425A4A61D003B6146 /* Info.plist */,
 			);
 			path = MeventsUnitTests;
@@ -648,6 +651,7 @@
 			files = (
 				0481AB0925A4A7DF003B6146 /* FakeServiceInfo.swift in Sources */,
 				044D363A25A4F7FB0094451D /* EventListViewModelTests.swift in Sources */,
+				04D1018925A66087009A78D6 /* CheckInViewModelTests.swift in Sources */,
 				0490AF2425A62CE800D99AA1 /* EventViewModelTests.swift in Sources */,
 				0481AB0425A4A738003B6146 /* URLSessionManagerTests.swift in Sources */,
 				04ECCA6C25A4DAB7003AAB6A /* EventServiceTests.swift in Sources */,
