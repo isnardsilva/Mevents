@@ -10,7 +10,7 @@ Aplicativo que exibe uma lista de eventos e permite fazer check-in nos eventos d
 
 ## Funcionalidades
 - [x] Consumir uma API REST
-- [ ] Exibir a listagem de eventos
+- [x] Exibir a listagem de eventos
 - [ ] Exibir os detalhes de cada evento
 - [ ] Realizar o check-in em cima de um evento
 - [ ] Realizar o compartilhamento de um evento
@@ -41,7 +41,7 @@ Aplicativo que exibe uma lista de eventos e permite fazer check-in nos eventos d
 - [x] Testar a camada de Network
 - [x] Implementar a obtenção dos eventos da API (Event Service)
 - [x] Testar a classe Event Service
-- [ ] Implementar a tela de listagem de eventos
+- [x] Implementar a tela de listagem de eventos
 - [ ] Implementar a tela que exibe os detalhes dos eventos
 - [ ] Implementar o ato de fazer check-in
 - [ ] Testar o ato de fazer check-in
