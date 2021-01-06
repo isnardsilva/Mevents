@@ -9,7 +9,7 @@ import Foundation
 
 enum EventServiceInfo {
     case fetchEvents
-    case checkIn(eventId: String, user: User)
+    case checkIn(_ checkIn: CheckIn)
 }
 
 
@@ -39,11 +39,11 @@ extension EventServiceInfo: ServiceProtocol {
         case .fetchEvents:
             return nil
             
-        case .checkIn(let eventId, let user):
+        case .checkIn(let checkIn):
             return [
-                EventAPISources.ParameterName.eventId: eventId,
-                EventAPISources.ParameterName.name: user.name,
-                EventAPISources.ParameterName.email: user.email
+                EventAPISources.ParameterName.eventId: checkIn.eventId,
+                EventAPISources.ParameterName.name: checkIn.userName,
+                EventAPISources.ParameterName.email: checkIn.userEmail
             ]
         }
     }

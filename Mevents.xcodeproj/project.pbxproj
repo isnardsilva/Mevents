@@ -12,6 +12,9 @@
 		04369D9F25A639B000A3983C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04369D9E25A639B000A3983C /* User.swift */; };
 		04369DA525A63DF700A3983C /* CheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04369DA425A63DF700A3983C /* CheckInViewController.swift */; };
 		04369DAB25A63EBA00A3983C /* CheckInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04369DAA25A63EBA00A3983C /* CheckInView.swift */; };
+		04369DB525A6467E00A3983C /* CheckInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04369DB425A6467E00A3983C /* CheckInViewModel.swift */; };
+		04369DBB25A6470100A3983C /* CheckInError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04369DBA25A6470100A3983C /* CheckInError.swift */; };
+		04369DBF25A64B3D00A3983C /* CheckIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04369DBE25A64B3D00A3983C /* CheckIn.swift */; };
 		044D363A25A4F7FB0094451D /* EventListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D363925A4F7FB0094451D /* EventListViewModelTests.swift */; };
 		044D364125A4F9D40094451D /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D364025A4F9D40094451D /* EventCell.swift */; };
 		0468C88925A55D1F002701D9 /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0468C88825A55D1F002701D9 /* EventDetailView.swift */; };
@@ -65,6 +68,9 @@
 		04369D9E25A639B000A3983C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		04369DA425A63DF700A3983C /* CheckInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInViewController.swift; sourceTree = "<group>"; };
 		04369DAA25A63EBA00A3983C /* CheckInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInView.swift; sourceTree = "<group>"; };
+		04369DB425A6467E00A3983C /* CheckInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInViewModel.swift; sourceTree = "<group>"; };
+		04369DBA25A6470100A3983C /* CheckInError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInError.swift; sourceTree = "<group>"; };
+		04369DBE25A64B3D00A3983C /* CheckIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIn.swift; sourceTree = "<group>"; };
 		044D363925A4F7FB0094451D /* EventListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModelTests.swift; sourceTree = "<group>"; };
 		044D364025A4F9D40094451D /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		0468C88825A55D1F002701D9 /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
@@ -148,6 +154,7 @@
 		04369DA225A63DCC00A3983C /* CheckIn */ = {
 			isa = PBXGroup;
 			children = (
+				04369DB325A6465C00A3983C /* ViewModel */,
 				04369DA325A63DE000A3983C /* View */,
 			);
 			path = CheckIn;
@@ -160,6 +167,14 @@
 				04369DAA25A63EBA00A3983C /* CheckInView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		04369DB325A6465C00A3983C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				04369DB425A6467E00A3983C /* CheckInViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		044CD28525A496A300A18181 /* AppDelegate */ = {
@@ -341,6 +356,7 @@
 			children = (
 				049D5DED25A4D7C300054917 /* Event.swift */,
 				04369D9E25A639B000A3983C /* User.swift */,
+				04369DBE25A64B3D00A3983C /* CheckIn.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -401,6 +417,7 @@
 				04FA0BAF25A49DA6007C81BD /* NetworkError.swift */,
 				04ECCA6725A4D9F5003AAB6A /* EventServiceError.swift */,
 				0490AF3325A630C600D99AA1 /* JSONTranslationError.swift */,
+				04369DBA25A6470100A3983C /* CheckInError.swift */,
 			);
 			path = ErrorHandling;
 			sourceTree = "<group>";
@@ -591,9 +608,12 @@
 				0481AAFE25A4A64B003B6146 /* EventAPISources.swift in Sources */,
 				04FA0B9125A49878007C81BD /* MainCoordinator.swift in Sources */,
 				0490AF3025A630AA00D99AA1 /* JSONTranslation.swift in Sources */,
+				04369DBB25A6470100A3983C /* CheckInError.swift in Sources */,
 				0481AAE625A49EA8003B6146 /* URLSessionManager.swift in Sources */,
 				04FA0BA925A49CB3007C81BD /* HTTPMethod.swift in Sources */,
 				0468C88925A55D1F002701D9 /* EventDetailView.swift in Sources */,
+				04369DBF25A64B3D00A3983C /* CheckIn.swift in Sources */,
+				04369DB525A6467E00A3983C /* CheckInViewModel.swift in Sources */,
 				0479F29825A4FFAB0094EAE5 /* EventViewModel.swift in Sources */,
 				049E707325A4E94300829C58 /* Identifier.swift in Sources */,
 				0408DF6125A4EFD4001DD0CB /* EventListViewModel.swift in Sources */,

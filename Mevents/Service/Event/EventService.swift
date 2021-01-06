@@ -38,8 +38,8 @@ final class EventService {
         })
     }
     
-    func checkIn(eventId: String, user: User, completionHandler: @escaping (Error?) -> Void) {
-        let service = EventServiceInfo.checkIn(eventId: eventId, user: user)
+    func checkIn(_ checkIn: CheckIn, completionHandler: @escaping (Error?) -> Void) {
+        let service = EventServiceInfo.checkIn(checkIn)
         
         networkManager.request(service: service, completionHandler: { result in
             switch result {
