@@ -10,8 +10,8 @@ import Foundation
 struct User: Codable {
     // MARK: - Properties
     let id: String
-    let name: String
-    let email: String
+    var name: String
+    var email: String
     
     
     // MARK: - Initialization
