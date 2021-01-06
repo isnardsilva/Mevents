@@ -51,6 +51,14 @@ final class CheckInView: UIView {
     }()
     
     
+    lazy var loadingView: LoadingView = {
+        let loadingView = LoadingView()
+        loadingView.isHidden = true
+        return loadingView
+    }()
+    
+    
+    
     // MARK: - Initialization
     init() {
         super.init(frame: .zero)
@@ -64,6 +72,18 @@ final class CheckInView: UIView {
 }
 
 
+// MARK: - Handle Loading Mode
+extension CheckInView {
+    func enableLoadingMode(_ enable: Bool) {
+        DispatchQueue.main.async { [weak self] in
+            self?.endEditing(true)
+            self?.loadingView.isHidden = !enable
+        }
+    }
+}
+
+
+
 // MARK: - View Codable
 extension CheckInView: ViewCodable {
     func setupHierarchy() {
@@ -71,6 +91,7 @@ extension CheckInView: ViewCodable {
         addSubview(nameTextField)
         addSubview(emailTextField)
         addSubview(confirmButton)
+        addSubview(loadingView)
     }
     
     func setupConstraints() {

@@ -15,6 +15,7 @@
 		04369DB525A6467E00A3983C /* CheckInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04369DB425A6467E00A3983C /* CheckInViewModel.swift */; };
 		04369DBB25A6470100A3983C /* CheckInError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04369DBA25A6470100A3983C /* CheckInError.swift */; };
 		04369DBF25A64B3D00A3983C /* CheckIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04369DBE25A64B3D00A3983C /* CheckIn.swift */; };
+		04369DD825A65B4100A3983C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04369DD725A65B4100A3983C /* LoadingView.swift */; };
 		044D363A25A4F7FB0094451D /* EventListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D363925A4F7FB0094451D /* EventListViewModelTests.swift */; };
 		044D364125A4F9D40094451D /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D364025A4F9D40094451D /* EventCell.swift */; };
 		0468C88925A55D1F002701D9 /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0468C88825A55D1F002701D9 /* EventDetailView.swift */; };
@@ -71,6 +72,7 @@
 		04369DB425A6467E00A3983C /* CheckInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInViewModel.swift; sourceTree = "<group>"; };
 		04369DBA25A6470100A3983C /* CheckInError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInError.swift; sourceTree = "<group>"; };
 		04369DBE25A64B3D00A3983C /* CheckIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIn.swift; sourceTree = "<group>"; };
+		04369DD725A65B4100A3983C /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		044D363925A4F7FB0094451D /* EventListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModelTests.swift; sourceTree = "<group>"; };
 		044D364025A4F9D40094451D /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		0468C88825A55D1F002701D9 /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
@@ -175,6 +177,14 @@
 				04369DB425A6467E00A3983C /* CheckInViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		04369DC725A65A8900A3983C /* CustomComponents */ = {
+			isa = PBXGroup;
+			children = (
+				04369DD725A65B4100A3983C /* LoadingView.swift */,
+			);
+			path = CustomComponents;
 			sourceTree = "<group>";
 		};
 		044CD28525A496A300A18181 /* AppDelegate */ = {
@@ -403,6 +413,7 @@
 			children = (
 				04FA0BAE25A49D92007C81BD /* ErrorHandling */,
 				0479F28D25A4FED90094EAE5 /* Extensions */,
+				04369DC725A65A8900A3983C /* CustomComponents */,
 				0481AAFD25A4A64B003B6146 /* EventAPISources.swift */,
 				049E707225A4E94300829C58 /* Identifier.swift */,
 				049E707625A4E99200829C58 /* ViewCodable.swift */,
@@ -627,6 +638,7 @@
 				049E707B25A4EBEB00829C58 /* EventListDataSource.swift in Sources */,
 				04ECCA6825A4D9F5003AAB6A /* EventServiceError.swift in Sources */,
 				049E706F25A4E93500829C58 /* EventListView.swift in Sources */,
+				04369DD825A65B4100A3983C /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

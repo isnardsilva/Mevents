@@ -60,7 +60,10 @@ extension CheckInViewController {
 // MARK: Confirm Check In
 extension CheckInViewController {
     private func confirmCheckIn() {
+        baseView.enableLoadingMode(true)
         viewModel.checkIn(completionHandler: { [weak self] error in
+            self?.baseView.enableLoadingMode(false)
+            
             if let detectedError = error {
                 self?.showAlert(title: "Opa", message: detectedError.localizedDescription)
             }
