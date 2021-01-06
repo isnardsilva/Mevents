@@ -11,16 +11,6 @@ class EventViewModel {
     // MARK: - Properties
     private let event: Event
     
-    /*
-     let id: String
-     let title: String
-     let description: String
-     let image: String
-     let price: Double
-     let latitude: Double
-     let longitude: Double
-     */
-    
     var id: String {
         return event.id
     }
