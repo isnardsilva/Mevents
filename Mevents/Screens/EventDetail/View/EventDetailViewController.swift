@@ -40,5 +40,32 @@ final class EventDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupActions()
+        setupEventData()
+    }
+}
+
+
+// MARK: Setup Event Data
+extension EventDetailViewController {
+    private func setupEventData() {
+        baseView.imageView.setImage(url: URL(string: viewModel.image))
+        baseView.titleLabel.text = viewModel.title
+        baseView.descriptionLabel.text = viewModel.description
+        baseView.dateLabel.text = viewModel.formattedDate
+        baseView.priceLabel.text = viewModel.formattedPrice
+    }
+}
+
+
+// MARK: - Actions
+extension EventDetailViewController {
+    private func setupActions() {
+        baseView.checkInButton.addTarget(self, action: #selector(checkInButtonTouched(_:)), for: .touchUpInside)
+    }
+    
+    @objc private func checkInButtonTouched(_ sender: UIButton) {
+        print("Check In")
     }
 }

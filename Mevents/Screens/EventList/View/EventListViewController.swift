@@ -60,10 +60,12 @@ final class EventListViewController: UIViewController {
         super.viewDidLoad()
         
         navigationItem.title = "Mevent"
+        navigationController?.navigationBar.topItem?.backButtonTitle = ""
         
         viewModel.fetchEvents()
     }
 }
+
 
 // MARK: - Handle View Model Responses
 extension EventListViewController {
