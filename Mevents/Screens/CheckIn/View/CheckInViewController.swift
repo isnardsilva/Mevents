@@ -13,6 +13,8 @@ final class CheckInViewController: UIViewController {
     private lazy var baseView = CheckInView()
     private let viewModel = CheckInViewModel()
     
+    private var userInfo: User?
+    
     
     // MARK: - Initialization
     init(event: Event) {
@@ -32,6 +34,20 @@ final class CheckInViewController: UIViewController {
         self.view = baseView
         
         setupActions()
+        setupUserData()
+    }
+}
+
+// MARK: - Handle User Data
+extension CheckInViewController {
+    private func setupUserData() {
+        guard let user = try? UserDAO().getUser() else {
+            return
+        }
+        
+        baseView.nameTextField.text = user.name
+        baseView.emailTextField.text = user.email
+        self.userInfo = user
     }
 }
 
@@ -46,9 +62,22 @@ extension CheckInViewController {
         let typedName = baseView.nameTextField.text ?? ""
         let typedEmail = baseView.emailTextField.text ?? ""
         
+        
         do {
             try viewModel.setUserName(typedName)
             try viewModel.setUserEmail(typedEmail)
+            
+            // Save new user infos
+            if var existingUser = userInfo {
+                existingUser.name = typedName
+                existingUser.name = typedEmail
+                try? UserDAO().saveUser(user: existingUser)
+            } else {
+                let newUserInfo = User(name: typedName, email: typedEmail)
+                try? UserDAO().saveUser(user: newUserInfo)
+                self.userInfo = newUserInfo
+            }
+            
             self.confirmCheckIn()
         } catch {
             showAlert(title: "Opa", message: error.localizedDescription)
