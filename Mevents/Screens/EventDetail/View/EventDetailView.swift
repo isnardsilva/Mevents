@@ -54,7 +54,6 @@ final class EventDetailView: UIView {
         button.setTitle("Check In".uppercased(), for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
-        button.titleLabel?.textColor = .white
         button.backgroundColor = .green
         button.layer.cornerRadius = 5
         return button

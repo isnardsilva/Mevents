@@ -66,6 +66,6 @@ extension EventDetailViewController {
     }
     
     @objc private func checkInButtonTouched(_ sender: UIButton) {
-        print("Check In")
+        coordinator?.navigateToCheckIn(event: viewModel.event)
     }
 }

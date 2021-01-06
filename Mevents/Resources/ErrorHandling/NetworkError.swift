@@ -27,7 +27,7 @@ extension NetworkError: LocalizedError {
         case .offline:
             return "Não há conexão com a internet."
         case .connectionError:
-            return "Houve algum problema no processo de conexão com o servidor especificado."
+            return "Houve algum problema no processo de conexão com o nosso servidor. Tente novamente mais tarde!"
         case .responseWithoutData:
             return "A resposta obtida do servidor não possui dados."
         case .invalidResponseType:

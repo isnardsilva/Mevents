@@ -37,4 +37,17 @@ final class EventService {
             }
         })
     }
+    
+    func checkIn(_ checkIn: CheckIn, completionHandler: @escaping (Error?) -> Void) {
+        let service = EventServiceInfo.checkIn(checkIn)
+        
+        networkManager.request(service: service, completionHandler: { result in
+            switch result {
+            case .failure(let error):
+                completionHandler(error)
+            case .success:
+                completionHandler(nil)
+            }
+        })
+    }
 }

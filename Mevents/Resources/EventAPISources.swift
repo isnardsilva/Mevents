@@ -12,4 +12,12 @@ enum EventAPISources {
     // MARK: - URLs
     static let baseURL = "http://5f5a8f24d44d640016169133.mockapi.io"
     static let eventsExtensionURL = "/api/events"
+    static let checkInExtensionURL = "/api/checkin"
+    
+    // MARK: Parameter Name
+    enum ParameterName {
+        static let eventId = "eventId"
+        static let name = "name"
+        static let email = "email"
+    }
 }

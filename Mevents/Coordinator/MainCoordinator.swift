@@ -35,4 +35,11 @@ extension MainCoordinator {
         eventDetailVC.coordinator = self
         navigationController.pushViewController(eventDetailVC, animated: true)
     }
+    
+    func navigateToCheckIn(event: Event) {
+        let checkInVC = CheckInViewController(event: event)
+        checkInVC.coordinator = self
+        checkInVC.modalPresentationStyle = .pageSheet
+        navigationController.present(checkInVC, animated: true, completion: nil)
+    }
 }
