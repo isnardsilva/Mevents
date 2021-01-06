@@ -51,4 +51,19 @@ final class EventServiceTests: XCTestCase {
             XCTFail("Event list is empty")
         }
     }
+    
+    func testCheckIn() {
+        // Given
+        let user = User(name: "User Test", email: "anyuser@mail.com")
+        let eventId = "1"
+        let promise = expectation(description: "Call to Check In to an event")
+        
+        // When
+        sut.checkIn(eventId: eventId, user: user, completionHandler: { error in
+            // Then
+            XCTAssertNil(error)
+            promise.fulfill()
+        })
+        wait(for: [promise], timeout: 5)
+    }
 }
