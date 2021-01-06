@@ -9,6 +9,7 @@ import Foundation
 
 enum EventServiceInfo {
     case fetchEvents
+    case checkIn(eventId: String, user: User)
 }
 
 
@@ -18,6 +19,9 @@ extension EventServiceInfo: ServiceProtocol {
         switch self {
         case .fetchEvents:
             return EventAPISources.baseURL + EventAPISources.eventsExtensionURL
+            
+        case .checkIn:
+            return EventAPISources.baseURL + EventAPISources.checkInExtensionURL
         }
     }
     
@@ -25,6 +29,8 @@ extension EventServiceInfo: ServiceProtocol {
         switch self {
         case .fetchEvents:
             return .GET
+        case .checkIn:
+            return .POST
         }
     }
     
@@ -32,6 +38,13 @@ extension EventServiceInfo: ServiceProtocol {
         switch self {
         case .fetchEvents:
             return nil
+            
+        case .checkIn(let eventId, let user):
+            return [
+                EventAPISources.ParameterName.eventId: eventId,
+                EventAPISources.ParameterName.name: user.name,
+                EventAPISources.ParameterName.email: user.email
+            ]
         }
     }
     

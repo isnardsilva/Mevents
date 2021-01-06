@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0408DF6125A4EFD4001DD0CB /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408DF6025A4EFD4001DD0CB /* EventListViewModel.swift */; };
 		04369D9725A6354D00A3983C /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = 04369D9625A6354D00A3983C /* events.json */; };
+		04369D9F25A639B000A3983C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04369D9E25A639B000A3983C /* User.swift */; };
 		044D363A25A4F7FB0094451D /* EventListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D363925A4F7FB0094451D /* EventListViewModelTests.swift */; };
 		044D364125A4F9D40094451D /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D364025A4F9D40094451D /* EventCell.swift */; };
 		0468C88925A55D1F002701D9 /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0468C88825A55D1F002701D9 /* EventDetailView.swift */; };
@@ -59,6 +60,7 @@
 /* Begin PBXFileReference section */
 		0408DF6025A4EFD4001DD0CB /* EventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModel.swift; sourceTree = "<group>"; };
 		04369D9625A6354D00A3983C /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
+		04369D9E25A639B000A3983C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		044D363925A4F7FB0094451D /* EventListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModelTests.swift; sourceTree = "<group>"; };
 		044D364025A4F9D40094451D /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		0468C88825A55D1F002701D9 /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
@@ -316,6 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				049D5DED25A4D7C300054917 /* Event.swift */,
+				04369D9E25A639B000A3983C /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -559,6 +562,7 @@
 				0479F28F25A4FEEE0094EAE5 /* UIImageView+setImage.swift in Sources */,
 				04704B8D25A48F02008A327D /* EventListViewController.swift in Sources */,
 				049D5DEE25A4D7C300054917 /* Event.swift in Sources */,
+				04369D9F25A639B000A3983C /* User.swift in Sources */,
 				044D364125A4F9D40094451D /* EventCell.swift in Sources */,
 				04704B8925A48F02008A327D /* AppDelegate.swift in Sources */,
 				0481AAFE25A4A64B003B6146 /* EventAPISources.swift in Sources */,
