@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Obtem os dados dos eventos que estão armazenados na núvem
 final class EventService {
     // MARK: - Properties
     private let networkManager: NetworkManagerProtocol

@@ -43,6 +43,9 @@
 		049E707725A4E99200829C58 /* ViewCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E707625A4E99200829C58 /* ViewCodable.swift */; };
 		049E707B25A4EBEB00829C58 /* EventListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E707A25A4EBEB00829C58 /* EventListDataSource.swift */; };
 		04D1018925A66087009A78D6 /* CheckInViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D1018825A66087009A78D6 /* CheckInViewModelTests.swift */; };
+		04D8817825A67C6B00ED6772 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8817725A67C6B00ED6772 /* UserDefaultsManager.swift */; };
+		04D8817E25A67C8100ED6772 /* UserDefaultsManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8817D25A67C8100ED6772 /* UserDefaultsManagerError.swift */; };
+		04D8818325A67CD900ED6772 /* UserDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8818225A67CD900ED6772 /* UserDAO.swift */; };
 		04ECCA6825A4D9F5003AAB6A /* EventServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECCA6725A4D9F5003AAB6A /* EventServiceError.swift */; };
 		04ECCA6C25A4DAB7003AAB6A /* EventServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECCA6B25A4DAB7003AAB6A /* EventServiceTests.swift */; };
 		04FA0B8E25A4982A007C81BD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA0B8D25A4982A007C81BD /* Coordinator.swift */; };
@@ -106,6 +109,9 @@
 		049E707625A4E99200829C58 /* ViewCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodable.swift; sourceTree = "<group>"; };
 		049E707A25A4EBEB00829C58 /* EventListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListDataSource.swift; sourceTree = "<group>"; };
 		04D1018825A66087009A78D6 /* CheckInViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInViewModelTests.swift; sourceTree = "<group>"; };
+		04D8817725A67C6B00ED6772 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		04D8817D25A67C8100ED6772 /* UserDefaultsManagerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManagerError.swift; sourceTree = "<group>"; };
+		04D8818225A67CD900ED6772 /* UserDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDAO.swift; sourceTree = "<group>"; };
 		04ECCA6725A4D9F5003AAB6A /* EventServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventServiceError.swift; sourceTree = "<group>"; };
 		04ECCA6B25A4DAB7003AAB6A /* EventServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventServiceTests.swift; sourceTree = "<group>"; };
 		04FA0B8D25A4982A007C81BD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -273,6 +279,7 @@
 				04FA0B8725A497EF007C81BD /* Coordinator */,
 				049D5DEC25A4D7AE00054917 /* Model */,
 				04FA0B9725A49BDB007C81BD /* Network */,
+				04D8817225A67BF000ED6772 /* LocalStorage */,
 				049D5DDE25A4D6C800054917 /* Service */,
 				044CD28625A496AE00A18181 /* Screens */,
 				04FA0BAD25A49D89007C81BD /* Resources */,
@@ -351,6 +358,7 @@
 			isa = PBXGroup;
 			children = (
 				049D5DDF25A4D6D000054917 /* Event */,
+				04D8818125A67CA500ED6772 /* User */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -380,6 +388,30 @@
 				049E707A25A4EBEB00829C58 /* EventListDataSource.swift */,
 			);
 			path = DataSource;
+			sourceTree = "<group>";
+		};
+		04D8817225A67BF000ED6772 /* LocalStorage */ = {
+			isa = PBXGroup;
+			children = (
+				04D8817625A67C5200ED6772 /* UserDefaults */,
+			);
+			path = LocalStorage;
+			sourceTree = "<group>";
+		};
+		04D8817625A67C5200ED6772 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				04D8817725A67C6B00ED6772 /* UserDefaultsManager.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		04D8818125A67CA500ED6772 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				04D8818225A67CD900ED6772 /* UserDAO.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 		04FA0B8725A497EF007C81BD /* Coordinator */ = {
@@ -432,6 +464,7 @@
 				04ECCA6725A4D9F5003AAB6A /* EventServiceError.swift */,
 				0490AF3325A630C600D99AA1 /* JSONTranslationError.swift */,
 				04369DBA25A6470100A3983C /* CheckInError.swift */,
+				04D8817D25A67C8100ED6772 /* UserDefaultsManagerError.swift */,
 			);
 			path = ErrorHandling;
 			sourceTree = "<group>";
@@ -619,8 +652,11 @@
 				04369D9F25A639B000A3983C /* User.swift in Sources */,
 				044D364125A4F9D40094451D /* EventCell.swift in Sources */,
 				04704B8925A48F02008A327D /* AppDelegate.swift in Sources */,
+				04D8817E25A67C8100ED6772 /* UserDefaultsManagerError.swift in Sources */,
+				04D8818325A67CD900ED6772 /* UserDAO.swift in Sources */,
 				0481AAFE25A4A64B003B6146 /* EventAPISources.swift in Sources */,
 				04FA0B9125A49878007C81BD /* MainCoordinator.swift in Sources */,
+				04D8817825A67C6B00ED6772 /* UserDefaultsManager.swift in Sources */,
 				0490AF3025A630AA00D99AA1 /* JSONTranslation.swift in Sources */,
 				04369DBB25A6470100A3983C /* CheckInError.swift in Sources */,
 				0481AAE625A49EA8003B6146 /* URLSessionManager.swift in Sources */,

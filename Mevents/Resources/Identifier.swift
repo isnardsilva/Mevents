@@ -12,6 +12,10 @@ enum Identifier {
         static let eventCell = "eventCell"
     }
     
+    enum Database {
+        static let userInfoKey = "userInfo"
+    }
+    
     
     enum Color {
         static let mainBackgroundColor = "mainBackgroundColor"
