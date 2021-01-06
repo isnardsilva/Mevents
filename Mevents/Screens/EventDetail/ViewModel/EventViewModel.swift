@@ -9,7 +9,7 @@ import Foundation
 
 class EventViewModel {
     // MARK: - Properties
-    private let event: Event
+    private(set) var event: Event
     
     var id: String {
         return event.id

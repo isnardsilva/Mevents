@@ -10,6 +10,8 @@
 		0408DF6125A4EFD4001DD0CB /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408DF6025A4EFD4001DD0CB /* EventListViewModel.swift */; };
 		04369D9725A6354D00A3983C /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = 04369D9625A6354D00A3983C /* events.json */; };
 		04369D9F25A639B000A3983C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04369D9E25A639B000A3983C /* User.swift */; };
+		04369DA525A63DF700A3983C /* CheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04369DA425A63DF700A3983C /* CheckInViewController.swift */; };
+		04369DAB25A63EBA00A3983C /* CheckInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04369DAA25A63EBA00A3983C /* CheckInView.swift */; };
 		044D363A25A4F7FB0094451D /* EventListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D363925A4F7FB0094451D /* EventListViewModelTests.swift */; };
 		044D364125A4F9D40094451D /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D364025A4F9D40094451D /* EventCell.swift */; };
 		0468C88925A55D1F002701D9 /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0468C88825A55D1F002701D9 /* EventDetailView.swift */; };
@@ -61,6 +63,8 @@
 		0408DF6025A4EFD4001DD0CB /* EventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModel.swift; sourceTree = "<group>"; };
 		04369D9625A6354D00A3983C /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
 		04369D9E25A639B000A3983C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		04369DA425A63DF700A3983C /* CheckInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInViewController.swift; sourceTree = "<group>"; };
+		04369DAA25A63EBA00A3983C /* CheckInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInView.swift; sourceTree = "<group>"; };
 		044D363925A4F7FB0094451D /* EventListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModelTests.swift; sourceTree = "<group>"; };
 		044D364025A4F9D40094451D /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		0468C88825A55D1F002701D9 /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
@@ -141,6 +145,23 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		04369DA225A63DCC00A3983C /* CheckIn */ = {
+			isa = PBXGroup;
+			children = (
+				04369DA325A63DE000A3983C /* View */,
+			);
+			path = CheckIn;
+			sourceTree = "<group>";
+		};
+		04369DA325A63DE000A3983C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04369DA425A63DF700A3983C /* CheckInViewController.swift */,
+				04369DAA25A63EBA00A3983C /* CheckInView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		044CD28525A496A300A18181 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +177,7 @@
 				044CD28725A496BA00A18181 /* LaunchScreen */,
 				044CD28825A496C900A18181 /* EventList */,
 				048760F425A55C5000298AA3 /* EventDetail */,
+				04369DA225A63DCC00A3983C /* CheckIn */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -558,6 +580,7 @@
 				048760F725A55C7100298AA3 /* EventDetailViewController.swift in Sources */,
 				0481AAE925A4A554003B6146 /* HTTPResponseType.swift in Sources */,
 				049D5DE725A4D6FF00054917 /* EventServiceInfo.swift in Sources */,
+				04369DA525A63DF700A3983C /* CheckInViewController.swift in Sources */,
 				049E707725A4E99200829C58 /* ViewCodable.swift in Sources */,
 				0479F28F25A4FEEE0094EAE5 /* UIImageView+setImage.swift in Sources */,
 				04704B8D25A48F02008A327D /* EventListViewController.swift in Sources */,
@@ -577,6 +600,7 @@
 				04FA0B9925A49BF9007C81BD /* NetworkManagerProtocol.swift in Sources */,
 				0490AF3425A630C600D99AA1 /* JSONTranslationError.swift in Sources */,
 				04FA0BB025A49DA6007C81BD /* NetworkError.swift in Sources */,
+				04369DAB25A63EBA00A3983C /* CheckInView.swift in Sources */,
 				04FA0BA625A49C97007C81BD /* ServiceProtocol.swift in Sources */,
 				049D5DE125A4D6DA00054917 /* EventService.swift in Sources */,
 				04704B8B25A48F02008A327D /* SceneDelegate.swift in Sources */,
