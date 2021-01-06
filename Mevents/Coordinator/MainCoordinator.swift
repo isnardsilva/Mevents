@@ -26,3 +26,13 @@ final class MainCoordinator: Coordinator {
         navigationController.pushViewController(eventListVC, animated: true)
     }
 }
+
+
+// MARK: - Navigation
+extension MainCoordinator {
+    func navigateToEventDetail(event: Event) {
+        let eventDetailVC = EventDetailViewController(event: event)
+        eventDetailVC.coordinator = self
+        navigationController.pushViewController(eventDetailVC, animated: true)
+    }
+}

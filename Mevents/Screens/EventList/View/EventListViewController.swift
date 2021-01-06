@@ -50,11 +50,16 @@ final class EventListViewController: UIViewController {
         self.view = baseView
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationItem.title = "Mevent"
-        navigationController?.navigationBar.prefersLargeTitles = true
         
         viewModel.fetchEvents()
     }
@@ -75,6 +80,7 @@ extension EventListViewController {
 // MARK: - Handle Event Selection
 extension EventListViewController {
     private func didSelectEvent(_ event: Event) {
-        print("Selected event:", event.title)
+//        print("Selected event:", event.title)
+        coordinator?.navigateToEventDetail(event: event)
     }
 }
