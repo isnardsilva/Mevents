@@ -12,6 +12,7 @@ enum Identifier {
         static let eventCell = "eventCell"
     }
     
+    
     enum Database {
         static let userInfoKey = "userInfo"
     }

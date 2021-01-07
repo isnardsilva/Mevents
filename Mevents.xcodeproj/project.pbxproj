@@ -18,7 +18,6 @@
 		04369DD825A65B4100A3983C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04369DD725A65B4100A3983C /* LoadingView.swift */; };
 		044D363A25A4F7FB0094451D /* EventListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D363925A4F7FB0094451D /* EventListViewModelTests.swift */; };
 		044D364125A4F9D40094451D /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D364025A4F9D40094451D /* EventCell.swift */; };
-		0462C32925A6B49C008D5E68 /* SharingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0462C32825A6B49C008D5E68 /* SharingView.swift */; };
 		0468C88925A55D1F002701D9 /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0468C88825A55D1F002701D9 /* EventDetailView.swift */; };
 		04704B8925A48F02008A327D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04704B8825A48F02008A327D /* AppDelegate.swift */; };
 		04704B8B25A48F02008A327D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04704B8A25A48F02008A327D /* SceneDelegate.swift */; };
@@ -81,7 +80,6 @@
 		04369DD725A65B4100A3983C /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		044D363925A4F7FB0094451D /* EventListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModelTests.swift; sourceTree = "<group>"; };
 		044D364025A4F9D40094451D /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
-		0462C32825A6B49C008D5E68 /* SharingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingView.swift; sourceTree = "<group>"; };
 		0468C88825A55D1F002701D9 /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
 		04704B8525A48F02008A327D /* Mevents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mevents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04704B8825A48F02008A327D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -195,7 +193,6 @@
 			isa = PBXGroup;
 			children = (
 				04369DD725A65B4100A3983C /* LoadingView.swift */,
-				0462C32825A6B49C008D5E68 /* SharingView.swift */,
 			);
 			path = CustomComponents;
 			sourceTree = "<group>";
@@ -661,7 +658,6 @@
 				04D8817E25A67C8100ED6772 /* UserDefaultsManagerError.swift in Sources */,
 				04D8818325A67CD900ED6772 /* UserDAO.swift in Sources */,
 				0481AAFE25A4A64B003B6146 /* EventAPISources.swift in Sources */,
-				0462C32925A6B49C008D5E68 /* SharingView.swift in Sources */,
 				04FA0B9125A49878007C81BD /* MainCoordinator.swift in Sources */,
 				04D8817825A67C6B00ED6772 /* UserDefaultsManager.swift in Sources */,
 				0490AF3025A630AA00D99AA1 /* JSONTranslation.swift in Sources */,
@@ -847,7 +843,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FP388F7HF3;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Mevents/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -868,7 +864,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FP388F7HF3;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Mevents/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -887,7 +883,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FP388F7HF3;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MeventsUnitTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -908,7 +904,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FP388F7HF3;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MeventsUnitTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -81,7 +81,6 @@ extension EventListViewController {
 // MARK: - Handle Event Selection
 extension EventListViewController {
     private func didSelectEvent(_ event: Event) {
-//        print("Selected event:", event.title)
         coordinator?.navigateToEventDetail(event: event)
     }
 }
