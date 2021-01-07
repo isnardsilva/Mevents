@@ -41,6 +41,7 @@ final class EventDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupNavigationBarButtons()
         setupActions()
         setupEventData()
     }
@@ -59,6 +60,15 @@ extension EventDetailViewController {
 }
 
 
+// MARK: - Navigation Bar
+extension EventDetailViewController {
+    private func setupNavigationBarButtons() {
+        let shareBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "square.and.arrow.up"), style: .plain, target: self, action: #selector(shareButtonTouched))
+        navigationItem.rightBarButtonItem = shareBarButtonItem
+    }
+}
+
+
 // MARK: - Actions
 extension EventDetailViewController {
     private func setupActions() {
@@ -67,5 +77,19 @@ extension EventDetailViewController {
     
     @objc private func checkInButtonTouched(_ sender: UIButton) {
         coordinator?.navigateToCheckIn(event: viewModel.event)
+    }
+    
+    @objc private func shareButtonTouched() {
+        var items: [Any] = []
+        
+        if let validImage = baseView.imageView.image {
+            items.append(validImage)
+        }
+        
+        items.append("Venha para o evento \(viewModel.title). ")
+        items.append(viewModel.description)
+        
+        let activityVC = UIActivityViewController(activityItems: items, applicationActivities: nil)
+        self.present(activityVC, animated: true, completion: nil)
     }
 }
