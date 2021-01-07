@@ -38,11 +38,10 @@ final class EventListViewController: UIViewController {
                 self?.baseView.collectionView.dataSource = validDataSource
                 self?.baseView.collectionView.delegate = validDataSource
                 self?.baseView.collectionView.reloadData()
+                self?.baseView.changeContentMode(to: .contentDisplay)
             }
         }
     }
-    
-    
     
     // MARK: - View Life Cycle
     override func loadView() {
@@ -74,7 +73,7 @@ extension EventListViewController {
     }
     
     private func didReceiveError(_ error: Error) {
-        print(error.localizedDescription)
+        baseView.changeContentMode(to: .error(message: error.localizedDescription))
     }
 }
 
