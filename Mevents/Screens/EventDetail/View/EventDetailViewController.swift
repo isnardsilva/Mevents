@@ -80,6 +80,16 @@ extension EventDetailViewController {
     }
     
     @objc private func shareButtonTouched() {
-        print("Sharing")
+        var items: [Any] = []
+        
+        if let validImage = baseView.imageView.image {
+            items.append(validImage)
+        }
+        
+        items.append("Venha para o evento \(viewModel.title). ")
+        items.append(viewModel.description)
+        
+        let activityVC = UIActivityViewController(activityItems: items, applicationActivities: nil)
+        self.present(activityVC, animated: true, completion: nil)
     }
 }
